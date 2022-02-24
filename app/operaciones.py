@@ -50,3 +50,11 @@ def resto(x, y):
     1
     """
     return x % y
+def rot13(x)
+    """Función que cifra en ROT13
+
+    """
+    rot13 = str.maketrans(
+    'ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz',
+    'NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm')
+x.translate(rot13)
