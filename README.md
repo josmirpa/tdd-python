@@ -1,5 +1,5 @@
 # Plantilla para desarrollo guiado por pruebas en Python
-
+![flujo de trabajo de ejemplo](https://github.com/josmirpa//tdd-python/actions/workflows/main.yml/badge.svg)
 Proyecto base para crear aplicaciones siguiendo la metodología TDD
 
 ## Instrucciones
