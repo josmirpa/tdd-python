@@ -1,11 +1,13 @@
-from app.operaciones import rot13
+from app.operaciones import suma
 
 
 
 class TestClass:
     def test_suma(self):
-        assert rot13("a") == "n"
-        assert rot13("b") == "o"
+        assert suma(4, 5) == 9
+        assert suma(-1, -2) == -3
+        assert suma(-7, 5) == -2
+        assert suma(-7, 9) == 2
 
 
 
