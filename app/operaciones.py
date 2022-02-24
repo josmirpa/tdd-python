@@ -50,11 +50,10 @@ def resto(x, y):
     1
     """
     return x % y
-def rot13(x):
-    """Función que cifra en ROT13
-
+def rot13(s):
+    """Funcion de cifrado Rot13
     """
-    rot13 = str.maketrans(
-    'ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz',
-    'NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm')
-x.translate(rot13)
+    chars = "abcdefghijklmnopqrstuvwxyz"
+    trans = chars[13:]+chars[:13]
+    rot_char = lambda c: trans[chars.find(c)] if chars.find(c)>-1 else c
+    return ''.join( rot_char(c) for c in s ) 
