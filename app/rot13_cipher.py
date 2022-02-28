@@ -8,13 +8,11 @@ def rot13(message):
         for char in message:
             if 65 <= ord(char) <= 90 or 97 <= ord(char) <= 122:
                 if 65 <= ord(char) <= 90:
-                    # capitlized case
                     if ord(char) + 13 > 90:
                         char = chr(ord(char) + 13 - 90 + 65 - 1)
                     else:
                         char = chr(ord(char) + 13)
                 else:
-                    # lowercase
                     if ord(char) + 13 > 122:
                         char = chr(ord(char) + 13 - 122 + 97 - 1)
                     else:
